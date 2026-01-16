@@ -2,6 +2,7 @@ baseURL = 'https://diy.codices.one/'
 languageCode = 'en-us'
 title = 'diy.codices.one'
 theme = 'terminal'
+summaryLength = 30
 publishDir = "../public"
 copyright = '2026 codices.one'
 
