@@ -22,7 +22,7 @@ site: image # Generates a new hugo site.
 
 .PHONY: build
 build: # Build static pages.
-	$(CONTAINER_RUNTIME) run --rm -it \
+	$(CONTAINER_RUNTIME) run --rm \
 		-p 1313:1313 \
 		-v "$$PWD:/src:Z" \
 		$(IMAGE_NAME) \
