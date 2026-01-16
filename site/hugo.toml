@@ -9,3 +9,8 @@ copyright = '2026 codices.one'
   logo.logoText = "DIY.codices.one"
   centerTheme = true
   readMore = "Read more"
+[menu]
+  [[menu.main]]
+    identifier = "woodworking"
+    name = "Woodworking"
+    url = "/woodworking"
