@@ -31,6 +31,7 @@ build: clear # Build static pages.
 		-v "$$PWD:/src:Z" \
 		$(IMAGE_NAME) \
 		--source site \
+		--panicOnWarning
 
 .PHONY: post
 post: image # Creates a new post.
