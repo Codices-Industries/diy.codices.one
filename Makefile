@@ -31,7 +31,6 @@ build: clear # Build static pages.
 		-v "$$PWD:/src:Z" \
 		$(IMAGE_NAME) \
 		--source site \
-		--minify
 
 .PHONY: post
 post: image # Creates a new post.
@@ -47,4 +46,4 @@ dev: clear # Runs development server.
 		-p 1313:1313 \
 		-v "$$PWD:/src:Z" \
 		$(IMAGE_NAME) \
-		server --source site --bind 0.0.0.0 -D --minify
+		server --source site --bind 0.0.0.0 -D
