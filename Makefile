@@ -25,7 +25,7 @@ site: image # Generates a new hugo site.
 		new site site
 
 .PHONY: build
-build: # Build static pages.
+build: clear # Build static pages.
 	$(CONTAINER_RUNTIME) run --rm \
 		-p 1313:1313 \
 		-v "$$PWD:/src:Z" \
@@ -42,7 +42,7 @@ post: image # Creates a new post.
 	  --source site
 
 .PHONY: dev
-dev: # Runs development server.
+dev: clear # Runs development server.
 	$(CONTAINER_RUNTIME) run --rm -it \
 		-p 1313:1313 \
 		-v "$$PWD:/src:Z" \
